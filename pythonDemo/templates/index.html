@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>layout 后台大布局 - Layui</title>
+  <link rel="stylesheet" href="{% static 'css/semantic.css' %}">
+</head>
+<body>
+
+    <div class="ui thin visible left vertical menu sidebar" id="sidebar">
+        <a class="item" id="statistics">Statistics</a>
+        <a class="item">Parse Video</a>
+        <a class="item">Grab Tickets</a>
+    </div>
+    <div class="pusher">
+        <!-- Site content !-->
+        <div class="ui secondary  menu">
+            <a class="item" id="menu">Home</a>
+            <a class="item">Menu</a>
+            <a class="item">Help</a>
+        </div>
+        <div class="ui center segment aligned grid" style="width: 60%">
+            <div class="ui simple dropdown  item">
+                <span class="text">brand</span>
+                <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <div class="item" id="brand_bar">brand bar</div>
+                        <div class="item" id="brand_pie">brand pie</div>
+                    </div>
+                </div>
+            <div class="ui container" id="charts">
+            </div>
+        </div>
+        <div class="ui center segment aligned grid" style="width: 60%">
+           <div class="ui input">
+                <div class="ui text">Parse Video </div>
+                <input id="pSite" type="text" placeholder="Search..."/>
+                <div id="search" class="ui button">Search</div>
+            </div>
+            <div id="realStie" class="ui text"></div>
+        </div>
+    </div>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/semantic.js' %}"></script>
+    <script src="{% static 'js/highcharts.js' %}"></script>
+    <script src="{% static 'js/highcharts-more.js' %}"></script>
+<script>
+    $('#menu').click(function () {
+        $('#sidebar').sidebar('hide');
+    });
+</script>
+<script>
+    $('#search').click(function () {
+        pSite= document.getElementById("pSite").value;
+        realSite='';
+        $.post('/parseVideo',{'pSite':pSite},function (json) {
+            realSite=json['realSite'];
+        });
+        setTimeout(function () {
+            $('#realStie').html(realSite)
+        },100)
+    })
+</script>    
+<script>
+    $('#brand_bar').click(function () {
+        var barChart=NaN;
+        $.get('/bar', function (json) {barChart=json;});
+        setTimeout(function () {
+             nList=barChart['nList'];
+             cList=barChart['cList'];
+             Highcharts.chart('charts', {
+                title: {
+                    text: 'Computer brand shares form JD'
+                },
+                credits: {
+                        enabled:false
+                },
+                xAxis: {
+                    categories:nList
+                },
+                series: [{
+                    type: 'column',
+                    colorByPoint: true,
+                    data: cList,
+                    showInLegend: false
+                }]
+             });
+        },100)
+
+    });
+
+    $('#brand_pie').click(function () {
+        var pieChart=NaN;
+        $.get('/pie', function (json) {pieChart=json;});
+        setTimeout(function () {
+            Highcharts.chart('charts', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Computer brand shares form JD'
+            },
+            credits: {
+                enabled: false
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'brands',
+                colorByPoint: true,
+                data:pieChart
+            }]});
+        },100)
+
+    });
+
+</script>
+</body>
+</html>
