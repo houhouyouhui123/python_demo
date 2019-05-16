@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8b6296f-04a6-465e-babe-d64384c67036" name="Default Changelist" comment="Create Django">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/computer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/computerInfo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parseVideo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/semantic.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/highcharts-3d.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/highcharts-more.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/highcharts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/highcharts.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/semantic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythonDemo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonDemo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythonDemo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonDemo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/computerInfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/computerInfo.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,11 +16,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parseVideo.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/computerInfo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="85" column="42" lean-forward="true" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pythonDemo/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="172">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -76,15 +93,15 @@
         <option value="$PROJECT_DIR$/static/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/spider/computerInfo.py" />
         <option value="F:/myblog/blog-admin/src/main/resources/templates/index.ftl" />
-        <option value="$PROJECT_DIR$/computerInfo.py" />
         <option value="$PROJECT_DIR$/spider/urls.py" />
-        <option value="$PROJECT_DIR$/pythonDemo/settings.py" />
         <option value="$PROJECT_DIR$/spider/views.py" />
         <option value="$PROJECT_DIR$/computer.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/detest.js" />
         <option value="$PROJECT_DIR$/templates/key.html" />
         <option value="$PROJECT_DIR$/parseVideo.py" />
+        <option value="$PROJECT_DIR$/pythonDemo/settings.py" />
+        <option value="$PROJECT_DIR$/computerInfo.py" />
       </list>
     </option>
   </component>
@@ -100,12 +117,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="pythonDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pythonDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pythonDemo" type="462c0819:PsiDirectoryNode" />
               <item name="pythonDemo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -117,6 +138,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -124,7 +146,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../scrapyDemo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -278,6 +300,8 @@
       <workItem from="1556024846846" duration="11159000" />
       <workItem from="1556064436594" duration="11886000" />
       <workItem from="1556621365789" duration="600000" />
+      <workItem from="1556680158650" duration="509000" />
+      <workItem from="1557484907243" duration="2307000" />
     </task>
     <task id="LOCAL-00001" summary="Create Django">
       <created>1555663946037</created>
@@ -297,12 +321,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175305000" />
+    <option name="totallyTimeSpent" value="178121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49625936" visible="true" weight="0.27836612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49625936" visible="true" weight="0.28744328" />
       <window_info id="Structure" order="1" sideWeight="0.50374067" side_tool="true" weight="0.12254161" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -316,8 +341,8 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49924356" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.34262297" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.19836065" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.28688523" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.19836065" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.2852459" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -445,13 +470,6 @@
     <entry file="file://$PROJECT_DIR$/static/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files/Python37/Lib/site-packages/requests/adapters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -521,23 +539,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spider/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/computerInfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="133" column="21" lean-forward="true" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonDemo/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spider/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -611,7 +612,31 @@
     <entry file="file://$PROJECT_DIR$/parseVideo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonDemo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/computerInfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="85" column="42" lean-forward="true" selection-start-line="85" selection-start-column="42" selection-end-line="85" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

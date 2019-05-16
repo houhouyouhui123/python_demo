@@ -75,7 +75,7 @@ def get_group1(info):
     if info!=None:
         return info.group(1)
     return None
-
+#数据库信息
 def getCollectionName():
     client = MongoClient('localhost', 27017)
     demo_db = client['demo']
